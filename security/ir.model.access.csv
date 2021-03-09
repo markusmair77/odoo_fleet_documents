@@ -1,6 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_vehicle_document_vehicle,to_vehicle_documents.vehicle_document.vehicle,model_vehicle_document,base.group_user,1,1,1,0
-access_vehicle_documents_fleet_officer,to_vehicle_documents.vehicle_document.officer,model_vehicle_document,fleet.fleet_group_user,1,1,1,1
-access_vehicle_document_type_vehicle,to_vehicle_documents.vehicle_document_type.vehicle,model_vehicle_document_type,base.group_user,1,0,0,0
-access_vehicle_document_type_fleet_officer,to_vehicle_documents.vehicle_document_type.officer,model_vehicle_document_type,fleet.fleet_group_user,1,1,1,0
-access_vehicle_document_type_fleet_manager,to_vehicle_documents.vehicle_document_type.manager,model_vehicle_document_type,fleet.fleet_group_manager,1,1,1,1
