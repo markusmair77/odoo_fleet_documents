@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="vehicle_document_type_form">
+			<field name="name">vehicle.document.type.form</field>
+			<field name="model">vehicle.document.type</field>
+			<field name="arch" type="xml">
+				<form string="Vehicle Document Type Form">
+					<sheet>
+						<div class="oe_title">
+							<h1>
+								<field name="name"
+									placeholder="Art des Dokuments" />
+							</h1>
+						</div>
+						<group>
+							<group>
+								<field name="type" />
+								<field name="description" />
+							</group>
+							<group>
+								<field name="kept_by" />
+								<field name="return_upon_termination" />
+								<field name="days_to_notify" />
+							</group>
+						</group>
+
+					</sheet>
+					<div class="oe_chatter">
+						<field name="message_follower_ids" widget="mail_followers" />
+						<field name="activity_ids" widget="mail_activity" />
+						<field name="message_ids" widget="mail_thread" />
+					</div>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="vehicle_document_type_tree">
+			<field name="name">vehicle.document.type.tree</field>
+			<field name="model">vehicle.document.type</field>
+			<field name="arch" type="xml">
+				<tree string="Vehicle Document Type Tree">
+					<field name="name" />
+					<field name="kept_by" />
+					<field name="days_to_notify" />
+					<field name="description" />
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window"
+			id="action_vehicle_document_type">
+			<field name="name">Document Type</field>
+			<field name="res_model">vehicle.document.type</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+        <menuitem id="vehicle_document_type_menu"
+			name="Vehicle Document Type" parent="fleet.fleet_configuration"
+			groups="fleet.fleet_group_manager" action="action_vehicle_document_type" />
+	</data>
+</odoo>
