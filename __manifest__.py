@@ -83,5 +83,7 @@ Editions Supported
     'installable': True,
     'application': False,
     'auto_install': True,
+    'price': 145.9,
+    'currency': 'EUR',
     'license': 'OPL-1',
 }
