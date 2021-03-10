@@ -1,7 +1,7 @@
 {
-    'name': "Fleet Documents",
+    'name': "Fleet vehicle Documents",
 
-    'summary': """Manage fleet documents and Notify before expire date""",
+    'summary': """Manage fleet vehicle documents and notify before expire date""",
 
     'description': """
 This module allow Fleet managers to manage all kinds of fleet documents and automatic send an email notification 
